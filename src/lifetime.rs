@@ -15,6 +15,40 @@ use std::hash::{Hash, Hasher};
 ///   the XID_Start property.
 /// - All following characters must be Unicode code points with the XID_Continue
 ///   property.
+/*
+ "lifetime": {
+              "_type": "Lifetime",
+              "apostrophe": {
+                "_type": "Span",
+                "start": {
+                  "_type": "LineColumn",
+                  "line": 1,
+                  "column": 15
+                },
+                "end": {
+                  "_type": "LineColumn",
+                  "line": 1,
+                  "column": 16
+                }
+              },
+              "ident": {
+                "_type": "Ident",
+                "to_string": "static",
+                "span": {
+                  "_type": "Span",
+                  "start": {
+                    "_type": "LineColumn",
+                    "line": 1,
+                    "column": 16
+                  },
+                  "end": {
+                    "_type": "LineColumn",
+                    "line": 1,
+                    "column": 22
+                  }
+                }
+           
+*/
 pub struct Lifetime {
     pub apostrophe: Span,
     pub ident: Ident,
